@@ -15,13 +15,13 @@ struct MeetingView: View {
                 VStack {
                     Text("Seconds Elapsed").font(.caption)
                     Label("300", systemImage: "hourglass.bottomhalf.fill")
-
+                    
                 }
                 Spacer()
                 VStack {
                     Text("Seconds Remaining").font(.caption)
                     Label("600", systemImage: "hourglass.tophalf.fill")
-
+                    
                 }
             }
             .accessibilityElement(children: .ignore)
@@ -30,10 +30,10 @@ struct MeetingView: View {
             
             Circle().strokeBorder(lineWidth: 24)
             HStack {
-                    Text("Speaker 1 of 3")
-                    Spacer()
-                    Button(action: {}) {
-                        Image(systemName: "forward.fill")
+                Text("Speaker 1 of 3")
+                Spacer()
+                Button(action: {}) {
+                    Image(systemName: "forward.fill")
                 }.accessibilityLabel("Next speaker")
             }
         }.padding()
